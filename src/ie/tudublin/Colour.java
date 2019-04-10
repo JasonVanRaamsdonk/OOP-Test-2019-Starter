@@ -3,11 +3,11 @@ package ie.tudublin;
 import processing.data.TableRow;
 
 public class Colour extends UI{
-    private String colour;
-    private int r;
-    private int g;
-    private int b;
-    private int value;
+    public String colour;
+    public int r;
+    public int g;
+    public int b;
+    public int value;
 
     public Colour(TableRow row){
         this.colour = row.getString("colour");
@@ -16,5 +16,6 @@ public class Colour extends UI{
         this.b = row.getInt("b");
         this.value = row.getInt("value");
     }
+    
 
 }
